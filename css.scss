@@ -1,0 +1,92 @@
+.cardViewGrid {
+  justify-content: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  .cellItem {
+    padding: 10px;
+    flex-basis: 25%;
+
+    .ItemCardViewGrid {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+
+      .ItemCardViewGrid__Icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-flex;
+        flex-shrink: 0;
+        margin-right: 15px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .ItemCardViewGrid__Info {
+        color: #868686;
+
+        .ItemCardViewGrid__Title {
+          color: #1564c0;
+          margin-bottom: 0;
+          font-weight: normal;
+
+          @media (max-width: '320px') {
+            font-size: 15px;
+          }
+        }
+
+        .ItemCardViewGrid__Company {
+          color: #222;
+        }
+      }
+    }
+  }
+}
+
+.PositionsHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  .PositionsNomb {
+    color: #868686;
+  }
+
+  .PositionsFilter {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .SortByPositions {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 5px;
+
+      .SortByPositions__label {
+        color: #868686;
+      }
+
+      .md-text {
+        color: #1565c1;
+      }
+    }
+
+    .PositionsView {
+      margin-left: 10px;
+      color: #1565c1;
+
+      .md-text {
+        color: #1565c1;
+      }
+    }
+  }
+}
+
